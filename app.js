@@ -1,10 +1,7 @@
-let i;
-let num = 0;
+var nickname = "taro"
+console.log(nickname)
 
-for(i = 1; i < 11; i++){
-  num = num + i;
-}
+nickname ="ichiro"
+console.log(nickname)
 
-alert('1から10まで足し算した結果は' + num + 'です');
-
-//0+1を11未満になるまで続ける
+//varによる再代入
