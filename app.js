@@ -1,13 +1,9 @@
-function foo() {
-  let x = "webcamp"
-  {
-    let y = "hello webcamp"
-  }
-  console.log(x)
-  console.log(y)
+for (let i = 0; i < 10; i++){
+  console.log(i)
 }
 
-foo()
+console.log(i)
 
-//foo()という名前の関数の中に変数xとyがあり、それぞれコンソールログに出力
-//ただし、変数ｙが宣言した｛｝より外で呼び出されているのでエラーとなってしまう
+//変数iはfor文内の（）ブロック内で宣言されたもの
+//それをブロック外から参照したからエラーになった。
+//letによる変数宣言では、宣言されたブロック内が有効範囲となる
