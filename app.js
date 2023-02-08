@@ -1,7 +1,9 @@
-let nickname = "taro"
-console.log(nickname)
+var str = "webcamp" //strがグローバルスコープ
 
-nickname ="ichiro"
-console.log(nickname)
+function foo() {
+  console.log(str)
+  var y ="hello"　　//yが関数スコープとなっている
+}
 
-//varによる再代入
+foo()
+console.loge(y)　//yはfunction{}の中でしか使えないからエラーとなる
